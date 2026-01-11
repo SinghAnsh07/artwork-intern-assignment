@@ -1,0 +1,173 @@
+@import 'primereact/resources/themes/lara-light-indigo/theme.css';
+@import 'primereact/resources/primereact.min.css';
+@import 'primeicons/primeicons.css';
+
+
+.p-datatable {
+    background: transparent !important;
+}
+
+
+.p-paginator {
+    background: #f8f9fa !important;
+    border: 1px solid #dee2e6 !important;
+    border-top: none !important;
+    padding: 0.75rem 1rem !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    border-bottom-left-radius: var(--radius-md);
+    border-bottom-right-radius: var(--radius-md);
+}
+
+
+.p-paginator .p-paginator-current {
+    color: #6c757d !important;
+    font-size: 0.875rem !important;
+    font-weight: 400 !important;
+    background: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-right: auto !important;
+    margin-right: auto !important;
+    width: auto !important;
+    height: auto !important;
+}
+
+
+.p-paginator-pages {
+    display: flex;
+    gap: 4px;
+}
+
+
+.p-paginator .p-paginator-page,
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+    min-width: 2rem !important;
+    min-width: 2rem !important;
+    height: 2rem !important;
+    margin: 0 2px !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 4px !important;
+    border-radius: 4px !important;
+    background: #ffffff !important;
+    color: #495057 !important;
+    font-size: 0.875rem !important;
+    font-weight: 500 !important;
+    transition: all 0.2s !important;
+    padding: 0.5rem !important;
+    line-height: 1 !important;
+}
+
+
+.p-paginator .p-paginator-page:not(.p-highlight):hover,
+.p-paginator .p-paginator-prev:not(.p-disabled):hover,
+.p-paginator .p-paginator-next:not(.p-disabled):hover {
+    background: #e9ecef !important;
+    color: #495057 !important;
+    border-color: #dee2e6 !important;
+}
+
+
+.p-paginator .p-paginator-page.p-highlight {
+    background: #4361ee !important;
+    background: #4361ee !important;
+    color: #ffffff !important;
+    border-color: #4361ee !important;
+    box-shadow: 0 2px 4px rgba(67, 97, 238, 0.2);
+}
+
+
+.p-paginator .p-paginator-prev,
+.p-paginator .p-paginator-next {
+    width: auto !important;
+    padding: 0 0.75rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.p-paginator .p-paginator-prev .p-paginator-icon,
+.p-paginator .p-paginator-next .p-paginator-icon {
+    display: none !important;
+}
+
+
+.p-paginator .p-paginator-prev::before {
+    content: "Previous";
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+.p-paginator .p-paginator-next::after {
+    content: "Next";
+    font-family: 'Inter', sans-serif !important;
+}
+
+
+.p-paginator .p-disabled {
+    opacity: 0.6 !important;
+    cursor: default !important;
+    background: #fff !important;
+}
+
+
+.p-datatable-thead>tr>th {
+    background: #f8f9fa !important;
+    color: #343a40 !important;
+    border-bottom: 2px solid #dee2e6 !important;
+}
+
+
+.p-datatable-tbody>tr {
+    background: #ffffff !important;
+    color: #495057 !important;
+    border-bottom: 1px solid #dee2e6 !important;
+}
+
+.p-datatable-tbody>tr:hover {
+    background: #f1f3f5 !important;
+}
+
+.p-datatable-tbody>tr>td {
+    border: none !important;
+    padding: 1rem !important;
+}
+
+
+.p-checkbox .p-checkbox-box {
+    border: 1px solid #ced4da !important;
+    background: #fff !important;
+    border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+
+.p-checkbox.p-highlight .p-checkbox-box {
+    border-color: #4361ee !important;
+    background: #4361ee !important;
+}
+
+
+.p-checkbox .p-checkbox-box .p-checkbox-icon {
+    font-size: 14px;
+    color: #ffffff !important;
+    font-weight: 700;
+}
+
+
+@media (max-width: 768px) {
+    .p-paginator {
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: center !important;
+    }
+
+    .p-paginator .p-paginator-current {
+        margin-right: 0 !important;
+        margin-bottom: 0.5rem !important;
+    }
+}
